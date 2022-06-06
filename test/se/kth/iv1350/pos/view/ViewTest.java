@@ -3,15 +3,15 @@ import org.junit.Before;
 import org.junit.After;
 import org.junit.BeforeClass;
 import org.junit.AfterClass;
-import static org.junit.jupiter.api.Assertions.*;
-import org.junit.jupiter.api.Test;
+import static org.junit.Assert.*;
+import org.junit.Test;
 import se.kth.iv1350.pos.controller.Controller;
 import se.kth.iv1350.pos.integration.Printer;
 import se.kth.iv1350.pos.integration.ExternalSystemCreator;
 import java.io.PrintStream;
 import java.io.ByteArrayOutputStream;
 
-class ViewTest {
+public class ViewTest {
 	Printer printer;
 	ExternalSystemCreator creator;
 	private View testInstance;
@@ -55,6 +55,7 @@ class ViewTest {
 		testInstance.runFakeExecution();
 		String printout = printoutBuffer.toString();
 		String expectedOutput = "Start";
-		assertTrue(printout.contains(expectedOutput), "The UI failed to start correctly");
+		assertTrue("The UI failed to start correctly", printout.contains(expectedOutput));
 	}
 }
+

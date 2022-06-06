@@ -4,7 +4,7 @@ import org.junit.After;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
-class ExternalSystemCreatorTest {
+public class ExternalSystemCreatorTest {
 	ExternalSystemCreator instance;
 	
 	@Before

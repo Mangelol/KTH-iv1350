@@ -3,10 +3,10 @@ import org.junit.Before;
 import org.junit.After;
 import org.junit.BeforeClass;
 import org.junit.AfterClass;
-import static org.junit.jupiter.api.Assertions.*;
-import org.junit.jupiter.api.Test;
+import static org.junit.Assert.*;
+import org.junit.Test;
 
-class AmountTest {
+public class AmountTest {
 	private Amount amountNoArgConstr;
 	private Amount amountWithAmountThree;
 	

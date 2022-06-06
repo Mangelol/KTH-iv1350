@@ -55,11 +55,20 @@ public class Amount {
 	 * Formatting the output for amount
 	 * @return Returns a readable value for the amount using 2 decimals
 	 */
+	/*
 	@Override
 	public String toString() {
 		DecimalFormat df2 = new DecimalFormat("#.##");
 		String s = "";
 		s += df2.format(amount);
+		
+		return s;
+	} */
+	
+	@Override
+	public String toString() {
+		String s = "";
+		s += amount;
 		
 		return s;
 	}
